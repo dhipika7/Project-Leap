@@ -1,4 +1,32 @@
 package com.example.project.leap.Bank;
 
-public class BankService {
+public class Bank {
+    private int id;
+    private String accountNumber;
+    private double balance;
+    public Bank() {
+    }
+    public Bank(int id, String accountNumber, double balance) {
+        this.id = id;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+    public double getBalance() {
+        return balance;
+    }
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 }
